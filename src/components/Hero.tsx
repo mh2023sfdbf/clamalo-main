@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="flex flex-wrap items-center -m-4 mb-12">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 p-4">
-          <h1 className="font-heading text-green-800 text-4xl md:text-5xl font-bold mb-5 max-w-xs md:max-w-md">
+          <h1 className="font-heading text-black text-4xl md:text-5xl font-normal mb-5 max-w-xs md:max-w-md">
             Track emotions, reflect on your mood, and share with your therapist.
           </h1>
           <p className="text-gray-600 mb-6 max-w-lg">
@@ -20,7 +20,7 @@ const Hero = () => {
             <div className="w-full sm:w-auto p-2">
               <a 
                 href="#" 
-                className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black border border-gray-900 bg-purple-200 hover:bg-purple-100 rounded-full transition duration-300"
+                className="inline-flex py-4 px-6 items-center justify-center text-lg font-normal text-black border border-gray-900 bg-purple-200 hover:bg-purple-100 rounded-full transition duration-300"
               >
                 Track Your Mood
               </a>
@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="p-2 w-full sm:w-auto">
               <a 
                 href="#" 
-                className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black border border-gray-900 bg-[#fbf9bf] hover:bg-yellow-100 rounded-full transition duration-300"
+                className="inline-flex py-4 px-6 items-center justify-center text-lg font-normal text-black border border-gray-900 bg-[#fbf9bf] hover:bg-yellow-100 rounded-full transition duration-300"
               >
                 Learn More
               </a>
