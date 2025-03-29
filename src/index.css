@@ -97,16 +97,21 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
   }
   
-  /* Add custom font styles */
+  /* Apply Outfit font to headings */
   h1, h2, h3, h4, h5, h6 {
     @apply font-sans;
   }
   
+  /* Add custom font styles */
   .font-heading {
     @apply font-sans;
+  }
+  
+  .font-body {
+    @apply font-serif;
   }
 }
 
