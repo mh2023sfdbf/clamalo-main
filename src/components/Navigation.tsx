@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -12,13 +13,13 @@ const Navigation = () => {
         <div>
           <div className="flex-wrap items-center">
             <div className="mr-14 flex-shrink-0">
-              <a href="#" className="inline-block">
+              <Link to="/" className="inline-block">
                 <img 
                   src="https://static.shuffle.dev/uploads/files/e3/e31d9ad0dda730334cb8ec81d3e19d2bcc0979bf/clamalo.svg" 
-                  alt="Mindla Logo" 
+                  alt="Clamalo Logo" 
                   className="object-contain h-10"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -29,7 +30,7 @@ const Navigation = () => {
             <div className="w-auto hidden lg:block">
               <ul className="flex items-center">
                 <li className="mr-9 text-sm hover:text-gray-700">
-                  <a href="#">For patients</a>
+                  <Link to="/for-patients">For patients</Link>
                 </li>
                 <li className="mr-9 text-sm hover:text-gray-700">
                   <a href="#">Are you a therapist?</a>
@@ -75,7 +76,7 @@ const Navigation = () => {
               <div className="w-full">
                 <div className="flex flex-col w-full">
                   <ul>
-                    <li className="mb-6"><a className="text-sm hover:text-gray-700" href="#">For patients</a></li>
+                    <li className="mb-6"><Link className="text-sm hover:text-gray-700" to="/for-patients" onClick={() => setMobileNavOpen(false)}>For patients</Link></li>
                     <li className="mb-6"><a className="text-sm hover:text-gray-700" href="#">Are you a therapist?</a></li>
                     <li className="mb-6"><a className="text-sm hover:text-gray-700" href="#">How it works</a></li>
                     <li className="mb-6"><a className="text-sm hover:text-gray-700" href="#">Pricing</a></li>
