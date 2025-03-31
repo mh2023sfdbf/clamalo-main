@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Plus, ChevronDown } from 'lucide-react';
 import { Slider } from "@/components/ui/slider";
@@ -54,7 +53,6 @@ const MoodTracker = () => {
                     </div>
                   </div>
                 </div>
-                {/* Mobile/Tablet Profile Button */}
                 <div className="lg:hidden relative inline-block mr-3">
                   <img src="https://static.shuffle.dev/uploads/files/e3/e31d9ad0dda730334cb8ec81d3e19d2bcc0979bf/marta-profile-sketch.jpg" alt="Profile" className="h-10 w-10 rounded-full border-2 border-purple-200"/>
                   <span className="ml-2 font-medium text-sm md:inline hidden">Sarah M.</span>
@@ -106,10 +104,8 @@ const MoodTracker = () => {
       </section>
       <div className="text-purple-300 text-[200px] font-bold absolute -right-10 top-1/2 transform -translate-y-1/2 opacity-5 z-0 pointer-events-none">+</div>
       <section className="p-6 rounded-2xl border border-1 border-rounded-xl mx-auto relative overflow-hidden bg-cover bg-center my-10 max-w-7xl" style={{backgroundBlendMode: "overlay", backgroundColor: "rgba(255, 255, 255, 0.92)"}}>
-        {/* Giant plus sign for visual emphasis */}
         <div className="absolute -left-12 top-1/2 transform -translate-y-1/2 opacity-10"></div>
         <div className="relative z-10">
-          {/* Sparkle animation effect in the corner */}
           <h2 className="text-xl text-gray-800 font-heading flex items-center text-center mx-auto justify-center mb-8 bg-gray-50">Take a deep breath and add your entry</h2>
           <h2 className="text-3xl text-gray-800 font-heading flex items-center">How are you feeling?</h2>
           <p className="text-xs text-gray-500 mt-2 mb-6">Start by describing your current mood in your own words — like "Excited but nervous", "Feeling disconnected" or "Calm and content".</p>
@@ -118,7 +114,6 @@ const MoodTracker = () => {
           </div>
           <h2 className="text-3xl text-gray-800 font-heading flex items-center mt-8">Select your emotion</h2>
           <p className="text-xs text-gray-500 mt-2 mb-6">Tap the emotion that best describes how you're feeling right now.</p>
-          {/* Visual Mood Picker Grid with enhanced visual cues */}
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mb-8">
             <button className="flex flex-col items-center justify-center bg-pink-100 text-black rounded-xl py-4 hover:bg-pink-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">😊</span>
@@ -170,7 +165,6 @@ const MoodTracker = () => {
               <div className="absolute inset-0 rounded-xl opacity-0 hover:opacity-20 transition-opacity"></div>
             </button>
           </div>
-          {/* Emotion Intensity Slider with enhanced visual cues */}
           <div>
             <label className="text-3xl text-gray-800 font-heading flex items-center">Emotion Intensity</label>
             <p className="text-xs text-gray-500 mt-2 mb-2">How strongly are you feeling this emotion right now?</p>
@@ -199,7 +193,6 @@ const MoodTracker = () => {
               </div>
             </div>
           </div>
-          {/* Optional Reflection Area */}
           <div className="mt-8">
             <label className="text-3xl text-gray-800 font-heading flex items-center">Want to reflect?</label>
             <p className="text-xs text-gray-500 mt-2">Anything you'd like to remember or talk about in therapy.</p>
@@ -212,17 +205,14 @@ const MoodTracker = () => {
               ></textarea>
             </div>
           </div>
-          {/* Submit Button - Now made sticky */}
-          <div className="sticky bottom-4 mt-10 text-right">
-            <div className="w-full sm:w-auto p-2 inline-block relative">
-              <button className="inline-flex py-4 px-8 items-center justify-center text-lg text-black border border-gray-900 bg-purple-200 hover:bg-purple-300 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
-                <span className="mr-2 font-bold">+</span>
-                Save Entry
-              </button>
-            </div>
-          </div>
         </div>
       </section>
+      <div className="fixed bottom-6 right-6 z-50">
+        <button className="inline-flex py-4 px-8 items-center justify-center text-lg text-black border border-gray-900 bg-purple-200 hover:bg-purple-300 rounded-full transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
+          <span className="mr-2 font-bold">+</span>
+          Save Entry
+        </button>
+      </div>
     </>
   );
 };
