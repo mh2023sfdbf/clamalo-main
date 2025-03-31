@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Plus, ChevronDown } from 'lucide-react';
 import { Slider } from "@/components/ui/slider";
@@ -115,49 +116,49 @@ const MoodTracker = () => {
           <h2 className="text-3xl text-gray-800 font-heading flex items-center mt-8">Select your emotion</h2>
           <p className="text-xs text-gray-500 mt-2 mb-6">Tap the emotion that best describes how you're feeling right now.</p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mb-8">
-            <button className="flex flex-col items-center justify-center bg-pink-100 text-black rounded-xl py-4 hover:bg-pink-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😊</span>
-              <span className="text-sm font-heading">Content</span>
+            <button className="flex flex-col items-center justify-center bg-green-100 text-black rounded-xl py-4 hover:bg-green-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">😌</span>
+              <span className="text-sm font-heading">Calm</span>
+            </button>
+            <button className="flex flex-col items-center justify-center bg-yellow-100 text-black rounded-xl py-4 hover:bg-yellow-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">🤩</span>
+              <span className="text-sm font-heading">Excited</span>
             </button>
             <button className="flex flex-col items-center justify-center bg-yellow-100 text-black rounded-xl py-4 hover:bg-yellow-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">😁</span>
               <span className="text-sm font-heading">Happy</span>
             </button>
             <button className="flex flex-col items-center justify-center bg-blue-100 text-black rounded-xl py-4 hover:bg-blue-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😢</span>
-              <span className="text-sm font-heading">Sad</span>
+              <span className="text-2xl mb-1">😎</span>
+              <span className="text-sm font-heading">Confident</span>
+            </button>
+            <button className="flex flex-col items-center justify-center bg-gray-100 text-black rounded-xl py-4 hover:bg-gray-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">😐</span>
+              <span className="text-sm font-heading">Neutral</span>
+            </button>
+            <button className="flex flex-col items-center justify-center bg-orange-100 text-black rounded-xl py-4 hover:bg-orange-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">😣</span>
+              <span className="text-sm font-heading">Guilty</span>
+            </button>
+            <button className="flex flex-col items-center justify-center bg-orange-100 text-black rounded-xl py-4 hover:bg-orange-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">😤</span>
+              <span className="text-sm font-heading">Frustrated</span>
             </button>
             <button className="flex flex-col items-center justify-center bg-red-100 text-black rounded-xl py-4 hover:bg-red-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">😡</span>
               <span className="text-sm font-heading">Angry</span>
             </button>
-            <button className="flex flex-col items-center justify-center bg-green-100 text-black rounded-xl py-4 hover:bg-green-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😌</span>
-              <span className="text-sm font-heading">Calm</span>
-            </button>
             <button className="flex flex-col items-center justify-center bg-purple-100 text-black rounded-xl py-4 hover:bg-purple-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">😰</span>
               <span className="text-sm font-heading">Anxious</span>
             </button>
+            <button className="flex flex-col items-center justify-center bg-blue-100 text-black rounded-xl py-4 hover:bg-blue-200 transform transition hover:scale-105 hover:shadow-md">
+              <span className="text-2xl mb-1">😢</span>
+              <span className="text-sm font-heading">Sad</span>
+            </button>
             <button className="flex flex-col items-center justify-center bg-indigo-100 text-black rounded-xl py-4 hover:bg-indigo-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">🤯</span>
               <span className="text-sm font-heading">Overwhelmed</span>
-            </button>
-            <button className="flex flex-col items-center justify-center bg-orange-100 text-black rounded-xl py-4 hover:bg-orange-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😬</span>
-              <span className="text-sm font-heading">Stressed</span>
-            </button>
-            <button className="flex flex-col items-center justify-center bg-emerald-100 text-black rounded-xl py-4 hover:bg-emerald-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">🥰</span>
-              <span className="text-sm font-heading">Loved</span>
-            </button>
-            <button className="flex flex-col items-center justify-center bg-sky-100 text-black rounded-xl py-4 hover:bg-sky-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😴</span>
-              <span className="text-sm font-heading">Tired</span>
-            </button>
-            <button className="flex flex-col items-center justify-center bg-amber-100 text-black rounded-xl py-4 hover:bg-amber-200 transform transition hover:scale-105 hover:shadow-md">
-              <span className="text-2xl mb-1">😕</span>
-              <span className="text-sm font-heading">Confused</span>
             </button>
             <button className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 text-black rounded-xl py-4 hover:bg-purple-50 transform transition hover:scale-105 hover:shadow-md relative bg-white">
               <span className="text-3xl mb-1 font-bold">+</span>
