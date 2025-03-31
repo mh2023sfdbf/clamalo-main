@@ -14,7 +14,7 @@ const Navigation = () => {
             <div className="mr-14 flex-shrink-0">
               <a href="#" className="inline-block">
                 <img 
-                  src="https://static.shuffle.dev/uploads/files/53/531ff9bb8642803b20f95b82b6df96f0f1130836/mindla-3.svg" 
+                  src="https://static.shuffle.dev/uploads/files/e3/e31d9ad0dda730334cb8ec81d3e19d2bcc0979bf/clamalo.svg" 
                   alt="Mindla Logo" 
                   className="object-contain h-10"
                 />

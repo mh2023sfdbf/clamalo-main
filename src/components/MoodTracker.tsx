@@ -111,15 +111,15 @@ const MoodTracker = () => {
         <div className="relative z-10">
           {/* Sparkle animation effect in the corner */}
           <h2 className="text-xl text-gray-800 font-heading flex items-center text-center mx-auto justify-center mb-8 bg-gray-50">Take a deep breath and add your entry</h2>
-          <h2 className="text-3xl text-gray-800 font-heading flex items-center ml-11">How are you feeling?</h2>
-          <p className="text-xs text-gray-500 mt-2 mb-6 ml-11">Start by describing your current mood in your own words — like "Excited but nervous", "Feeling disconnected" or "Calm and content".</p>
-          <div className="ml-11 transition-all duration-300 hover:scale-101 transform">
+          <h2 className="text-3xl text-gray-800 font-heading flex items-center">How are you feeling?</h2>
+          <p className="text-xs text-gray-500 mt-2 mb-6">Start by describing your current mood in your own words — like "Excited but nervous", "Feeling disconnected" or "Calm and content".</p>
+          <div className="transition-all duration-300 hover:scale-101 transform">
             <input type="text" placeholder="Enter your mood..." className="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-300 shadow-sm hover:shadow-md transition-shadow"/>
           </div>
-          <h2 className="text-3xl text-gray-800 font-heading flex items-center mt-8 ml-11">Select your emotion</h2>
-          <p className="text-xs text-gray-500 mt-2 mb-6 ml-11">Tap the emotion that best describes how you're feeling right now.</p>
+          <h2 className="text-3xl text-gray-800 font-heading flex items-center mt-8">Select your emotion</h2>
+          <p className="text-xs text-gray-500 mt-2 mb-6">Tap the emotion that best describes how you're feeling right now.</p>
           {/* Visual Mood Picker Grid with enhanced visual cues */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 ml-11 mb-8">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mb-8">
             <button className="flex flex-col items-center justify-center bg-pink-100 text-black rounded-xl py-4 hover:bg-pink-200 transform transition hover:scale-105 hover:shadow-md">
               <span className="text-2xl mb-1">😊</span>
               <span className="text-sm font-heading">Content</span>
@@ -171,7 +171,7 @@ const MoodTracker = () => {
             </button>
           </div>
           {/* Emotion Intensity Slider with enhanced visual cues */}
-          <div className="ml-11">
+          <div>
             <label className="text-3xl text-gray-800 font-heading flex items-center">Emotion Intensity</label>
             <p className="text-xs text-gray-500 mt-2 mb-2">How strongly are you feeling this emotion right now?</p>
             <div className="relative mt-4 p-5 rounded-xl bg-gray-50">
@@ -200,7 +200,7 @@ const MoodTracker = () => {
             </div>
           </div>
           {/* Optional Reflection Area */}
-          <div className="mt-8 ml-11">
+          <div className="mt-8">
             <label className="text-3xl text-gray-800 font-heading flex items-center">Want to reflect?</label>
             <p className="text-xs text-gray-500 mt-2">Anything you'd like to remember or talk about in therapy.</p>
             <div className="relative mt-6">
